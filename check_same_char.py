@@ -1,5 +1,5 @@
 ######################################################################
-## https://leetcode.cn/problems/check-distances-between-same-letters/
+# https://leetcode.cn/problems/check-distances-between-same-letters/
 ######################################################################
 
 from typing import List
@@ -22,7 +22,7 @@ class Solution:
         for i in range(len(distance)):
             if distance[i] != right_dist[i]:
                 return False
-            
+
         return True
 
 
@@ -30,9 +30,11 @@ if __name__ == "__main__":
     solution = Solution()
 
     s = "abaccb"
-    distance = [1,3,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    distance = [1, 3, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0,
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     print(solution.checkDistances(s, distance))
 
     s = "aa"
-    distance = [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    distance = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     print(solution.checkDistances(s, distance))
